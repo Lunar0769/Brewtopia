@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            text-align: center;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        
+        header {
+            background-color: #d9534f;
+            color: white;
+            padding: 15px;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 10px;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        section {
+            padding: 40px 20px;
+        }
+        
+        #menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .menu-item {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Bites</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Delicious Bites</h2>
+        <p>Experience the best food in town with a cozy atmosphere!</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="images/pizza.jpg" alt="Pizza">
+            <p>Cheese Pizza - ₹299</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/burger.jpg" alt="Burger">
+            <p>Classic Burger - ₹199</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/pasta.jpg" alt="Pasta">
+            <p>Italian Pasta - ₹249</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@deliciousbites.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: 123, Food Street, Surat</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+    </footer>
+</body>
+</html>
