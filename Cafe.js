@@ -106,3 +106,125 @@ addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover" , functio
 addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
 
 window.addEventListener("load", autoSlide);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const momentsSection = document.querySelector(".moments");
+    const momentsItems = document.querySelectorAll(".moments-items");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    momentsItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add("momentts");
+                        }, index * 200); // Staggered animation
+                    });
+                    observer.unobserve(entry.target); // Stop observing after animation plays
+                }
+            });
+        },
+        { threshold: 0.3 } // Trigger when 30% of the section is visible
+    );
+
+    observer.observe(momentsSection);
+});
+
+
+// Counters
+
+// const counters = document.querySelectorAll(".counter-num");
+// counters.forEach(counter => {
+//     Let initial_count = 0;
+//     const final_count = counter.dataset.count;
+//     setInterval(updateCounting,1);
+
+//     function updateCounting() {
+//         initial_count=initial_count+5;
+//         counter.innerText = initial_count;
+//     }
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const counters = document.querySelectorAll(".counter");
+//     let isScrolled = false;
+
+//     function formatNumber(value) {
+//         if (value >= 1000000) return (value / 1000000).toFixed(1) + "M";
+//         if (value >= 100000) return (value / 100000).toFixed(1) + "L";
+//         return value;
+//     }
+
+//     function animateCounters() {
+//         counters.forEach(counter => {
+//             const target = +counter.getAttribute("data-target");
+//             let start = 0;
+//             let increment = target / 100;
+
+//             function updateCounter() {
+//                 if (start < target) {
+//                     start += increment;
+//                     counter.innerText = formatNumber(Math.ceil(start));
+//                     requestAnimationFrame(updateCounter);
+//                 } else {
+//                     counter.innerText = formatNumber(target);
+//                 }
+//             }
+//             updateCounter();
+//         });
+//     }
+
+//     function onScroll() {
+//         const section = document.querySelector(".counter-section");
+//         const sectionTop = section.getBoundingClientRect().top;
+//         const screenPosition = window.innerHeight / 1.5;
+
+//         if (sectionTop < screenPosition && !isScrolled) {
+//             animateCounters();
+//             isScrolled = true;
+//         }
+//     }
+
+//     window.addEventListener("scroll", onScroll);
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+    let counters = document.querySelectorAll('.counter');
+    let counterSection = document.querySelector('.counter-section');
+    let started = false;
+
+    function formatNumber(num) {
+        if (num >= 1000000) return (num / 1000000).toFixed(1) + "M";
+        if (num >= 100000) return (num / 100000).toFixed(1) + "L";
+        return num;
+    }
+
+    function startCounter() {
+        counters.forEach(counter => {
+            let target = +counter.getAttribute('data-target');
+            let count = 0;
+            let speed = target / 100; // Speed Adjusted for Smooth Effect
+
+            let updateCount = () => {
+                count += speed;
+                if (count < target) {
+                    counter.innerText = formatNumber(Math.floor(count));
+                    requestAnimationFrame(updateCount);
+                } else {
+                    counter.innerText = formatNumber(target);
+                }
+            };
+            updateCount();
+        });
+    }
+
+    window.addEventListener('scroll', () => {
+        let sectionPos = counterSection.getBoundingClientRect().top;
+        let screenPos = window.innerHeight / 1.2;
+        if (sectionPos < screenPos && !started) {
+            startCounter();
+            started = true;
+        }
+    });
+});
+

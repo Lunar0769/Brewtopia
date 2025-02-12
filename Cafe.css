@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Kaushan+Script&family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root{
 --photo-blue:#6DC7D1;
 --platinum:#E2F3F4;
@@ -164,6 +166,7 @@ body.nav-active{
     font-size: var(--fontSize-title-4);
 }
 .body-1{
+    font-family: "Emilys Candy", serif;
     font-size: var(--fontSize-body-1);
     line-height: var(--lineHeight-6);
 }
@@ -181,7 +184,7 @@ body.nav-active{
     font-size: var(--fontSize-label-1);
 }
 .label-2{
-    font-size: var(--fontSize-label-2);
+    font-family: "Emilys Candy", serif;
 }
 
 
@@ -281,6 +284,7 @@ body.nav-active{
     transition: var(--transition-1);
 }
 .btn .text-2{
+    font-family: "Emilys Candy", serif;
     position: absolute;
     top: 100%;
     left:50%;
@@ -292,16 +296,20 @@ body.nav-active{
     bottom:-50%;
 }
 .btn:is(:hover, :focus-visible) .text-1{
+    font-family: "Emilys Candy", serif;
     transform: translateY(-40px);
 }
 .btn:is(:hover, :focus-visible) .text-2{
+    font-family: "Emilys Candy", serif;
     top:50%;
     transform: translate(-50%, -50%);
 }
 .btn-secondary::before{
+    font-family: "Emilys Candy", serif;
     background-color: var(--smoky-black-1);
 }
 .btn-secondary .text-2{
+    font-family: "Emilys Candy", serif;
     color:var(--white);
 }
 .has-before,.has-after{
@@ -382,7 +390,6 @@ body.nav-active{
 .topbar{
     display: none;
 }
-.topbar-item
 
 /* Header */
 .header .btn{
@@ -485,6 +492,7 @@ body.nav-active{
     margin-block-end: 100px;
 }
 .navbar-item{
+    font-family: "Emilys Candy", serif;
     border-block-start: 1px solid var(--white-alpha-20);
 }
 .navbar-link{
@@ -519,14 +527,17 @@ body.nav-active{
 }
 .navbar-title{
     margin-block-end: 15px;
+    font-family: "Emilys Candy", serif;
 }
 .navbar-text{
     margin-block: 10px;
 }
 .navbar .body-4{
+    font-family: "Emilys Candy", serif;
     color:var(--quick-silver)
 }
 .sidebar-link{
+    font-family: "Emilys Candy", serif;
     transition: var(--transition-1);
 }
 .sidebar-link:is(:hover, :focus-visible){
@@ -537,6 +548,7 @@ body.nav-active{
     margin-inline: auto;
 }
 .navbar .contact-label{
+    font-family: "Emilys Candy", serif;
     margin-block-start: 10px;
 }
 .navbar::-webkit-scrollbar-thumb{
@@ -594,7 +606,7 @@ body.nav-active{
     left:0;
     width: 100%;
     height: 100%;
-    transform:scale(1.15);
+    transform:scale(1.35);
     pointer-events: none;
     user-select: none;
     z-index: -1;
@@ -607,13 +619,14 @@ body.nav-active{
         transform: scale(1);
     }
     100%{
-        transform: scale(1.15);
+        transform: scale(1.35);
     }
 }
 .hero .section-subtitle::after{
     margin-block:14px 20px;
 }
 .hero-text{
+    font-family: "Emilys Candy", serif;
     margin-block:10px 40px;
 }
 .hero .btn{
@@ -664,9 +677,11 @@ body.nav-active{
     }
 }
 .hero .slider-item.active .section-subtitle{
+    font-family: "Emilys Candy", serif;
     animation-delay: 500ms;
 }
 .hero .slider-item.active .hero-title{
+    font-family: "Emilys Candy", serif;
     animation-delay: 1000ms;
 }
 .hero .slider-item.active .hero-text{
@@ -678,19 +693,26 @@ body.nav-active{
 
 /* View Menu */
 .view-menu-heading{
-    margin-top: 70px;
-    margin-bottom: 70px;
+    font-family: "Nosifer", serif;
+    margin-top: 100px;
     justify-content: center;
     text-align:center;
     align-items: center;
     font-size: 50px;
+    top:-20px;
+    position: relative;
 }
-.container{
+.menu-container{
+    padding: 50px;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
+    /* background-image: url(ashwini-chaudhary-monty-GzvQD2RJB0s-unsplash.jpg); */
+    z-index: -5;
+    height: 450px;
 }
-.container .menu-img{
+.menu-container .menu-img{
+    z-index: 1;
     height:200px;
     width: 200px;
     border-radius: 50%;
@@ -699,10 +721,12 @@ body.nav-active{
     margin-bottom: 20px;
     transition:0.5s;
 }
-.container .menu-items:hover{
+.menu-container .menu-items:hover{
     transform: scale(1.1);
 }
-.container .menu-link{
+.menu-container .menu-link{
+    z-index: 1;
+    font-family: "Emilys Candy", serif;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -710,10 +734,10 @@ body.nav-active{
     font-size:40px;
     transition: 0.3s;
 }
-.container .menu-link:hover{
+.menu-container .menu-link:hover{
     color:#6DC7D1;
 }
-.container .menu-items{
+.menu-container .menu-items{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -723,15 +747,235 @@ body.nav-active{
 
 }
 
-/* Offers */
+/* Menu-main */
+.menu-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 2px solid white;
+    /* padding: 5px; */
+    height: 800px;
+    width: 1530px;
+    margin-left: 10%;
+}
+.menu-main .menu-3{
+    height: 800px;
+    /* padding: 5px; */
+    width: 508px;
+}
+.menu-main .menu-3 .menu-2-item{
+    border: 2px solid white;
+    height: 300px;
+    width: 508px;
+    /* padding: 50px; */
+}
+.menu-main .menu-3 .menu-1-item{
+    border: 2px solid white;
+    height: 500px;
+    width: 508px;
+    /* padding: 50px; */
+}
 
+/* Best sellers */
+.best-container{
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-image: url(ashwini-chaudhary-monty-GzvQD2RJB0s-unsplash.jpg);
+    /* background-color: rgb(18, 53, 53); */
+    margin: 0px 20px 150px 20px;
+    border-radius:30px;
+}
+.best-container .best-items img{
+    border-radius:30px;
+    padding: 10px;
+    height: 90%;
+    width: 100%;
+    /* height: 220px; */
+    /* width: 365px; */
+}
+.best-container:is(:hover, :focus-visible){
+    box-shadow: var(--shadow-3);
+    transform: translateY(-8px);
+}
+.best-container .best-items img:hover{
+    transition: 0.5s;
+    transform:scale(1.05);
+}
+.best-container .btn{
+    padding: 8px 16px;
+    font-size: var(--label-md);
+    position: absolute;
+    top:calc(100% + 50px);
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: var(--transition2);
+}
+.best-container:is(:hover, :focus) .btn{
+    top:50%;
+}
+
+/* Best sellers 2 */
+.bestseller-heading{
+    font-family: "Nosifer", serif;
+    margin-top: 100px;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    font-size: 50px;
+    top:-20px;
+    position: relative;
+}
+.container-best{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgContainer{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slide_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+.img-best{
+    position: relative;
+    height: 370px;
+    width: 200px;
+    filter: saturate(10%);
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button{
+    position: absolute;
+    width: 200px;
+    height: 370px;
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider1:target ~ .imgContainer #img1,
+#slider1:target ~ .imgContainer #button1{
+    width: 350px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider2:target ~ .imgContainer #img2,
+#slider2:target ~ .imgContainer #button2{
+    width: 350px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider3:target ~ .imgContainer #img3,
+#slider3:target ~ .imgContainer #button3{
+    width: 350px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider4:target ~ .imgContainer #img4,
+#slider4:target ~ .imgContainer #button4{
+    width: 350px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider5:target ~ .imgContainer #img5,
+#slider5:target ~ .imgContainer #button5{
+    width: 350px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider6:target ~ .imgContainer #img6,
+#slider6:target ~ .imgContainer #button6{
+    width: 350px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider7:target ~ .imgContainer #img7,
+#slider7:target ~ .imgContainer #button7{
+    width: 350px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+
+/* #slider1:target ~ .imgContainer{
+    left: 60%;
+}
+#slider2:target ~ .imgContainer{
+    left: 40%;
+}
+#slider3:target ~ .imgContainer{
+    left: 20%;
+}
+#slider4:target ~ .imgContainer{
+    left: 0%;
+}
+#slider5:target ~ .imgContainer{
+    left: -20%;
+}
+#slider6:target ~ .imgContainer{
+    left: -40%;
+}
+#slider7:target ~ .imgContainer{
+    left: -60%;
+} */
+
+/* Offers */
+.offers-heading{
+    font-family: "Nosifer", serif;
+    margin-top: 70px;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    font-size: 50px;
+    top:-20px;
+    position: relative;
+}
 .offer{
     min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #412868;
+    /* background: #261246; */
+    margin: 0px 20px 80px 20px;
+    border-radius:30px;
     text-align: center;
     font-family: "Poppins";
 }
@@ -741,14 +985,15 @@ body.nav-active{
     display: flex;
     justify-content: center;
     height: 500px;
-    gap: 16px;
+    gap: 30px;
     transition: 0.3;
+    /* margin-bottom: 30px; */
 }
 
 .accordion li{
     position: relative;
     overflow: hidden;
-    flex: 0 0 80px;
+    flex: 0 0 150px;
     border-radius: 50px;
     opacity: 0.75;
     cursor:pointer;
@@ -774,35 +1019,36 @@ body.nav-active{
     transition: 0.3s;
 }
 
-.accordion h2 {
+/* .accordion h2 {
 font-weight: 400;
 font-size: 24px;
 line-height: 45px;
 border-bottom:2px solid #fff;
 margin-bottom: 10px;
 white-space: nowrap;
-}
+} */
 
-.accordion li .content {
+/* .accordion li .content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 1;
-    color: #fff;
+    color: black;
     padding: 15px;
     background: #02022e;
-    background:linear-gradient( Odeg, rgb(0 0 0/70%) 10%, rgb(255 255 255 /0%) 100%);
-    opacity: 0;   
+    background-image:url(offer3.jpg);
+    background-size: cover;
+    opacity: 1;   
     visibility: hidden;
-}
+} */
 
 .accordion:hover {
-    gap: 12;
+    gap: 30px;
 }
 
-.accordion li .content span {
+/* .accordion li .content span {
     position: absolute;
     z-index: 3;
     left: 50%;
@@ -811,69 +1057,596 @@ white-space: nowrap;
     scale: 0.85;
     visibility: hidden;   
     opacity: 0;
-}
+} */
 
 .accordion li:hover {
-flex: 0 1 260px;
+flex: 0 1 500px;
 transform: scaleX(15);
 transform: scaleY(1.1);
 z-index: 10;
 opacity: 1;
 }
-.accordion li:hover .content {    
+/* .accordion li:hover .content {    
     opacity: 1;
    visibility: visible;
-}
+} */
     
-.accordion li:hover span {
+/* .accordion li:hover span {
 scale: 1;
 opacity: 1;
 visibility: visible;
+} */
+
+/* Loc-counter */
+.loc-counter{
+    /* background-color: rgb(26, 97, 97);
+    border-radius:30px; */
+    margin: 0px 20px 150px 20px;
 }
+
+/* Our Presence */
+.presence-container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}
+.location-container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    padding:  50px 200px 15px 300px;
+    gap: 0px;
+    justify-content: center;
+}
+.location-container .location-items img{
+    background: black;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+.location-container .location-items:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+.location-container .location-items p{
+    position: relative;
+    font-weight: bold;
+    top:-40px;
+    font-size: 23px;
+    font-family: "Emilys Candy", serif;
+}
+
+/* Counters */
+
+/* .counters{
+    margin: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px 20px 150px 20px;
+    border-radius:30px;
+}
+.counters .counter-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    margin: 30px;
+    border-radius:30px;
+    width: 200px;
+}
+.counters .counter-item h1{
+    font-size:50px;
+    font-family: serif;
+}
+.counters .counter-item p{
+    font-size:30px;
+    font-family: serif;
+} */
+
+.counter-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    border-radius:30px;
+    padding: 20px 20px;
+}
+
+.counter-box {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.counter-box:hover {
+    transform: scale(1.1);
+}
+
+.counter {
+    display: block;
+    font-size: 60px;
+    color:#6DC7D1;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Emilys Candy", serif;
+}
+
+/* .counter-box p {
+    font-size: 1.2rem;
+    color: #666;
+} */
+
+.counter-box strong {
+    font-size:30px;
+    padding: 50px;
+    color:#6DC7D1;
+    font-family: "Emilys Candy", serif;
+}
+
+
+/* Moments */
+.moments-heading{
+    font-family: "Emilys Candy", serif;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.moments{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 100px;
+}
+.moments .moments-items img{
+    height: 253px;
+    width: 253px;
+}
+#img-1{
+    transition: 0.2s;
+    animation: momentts 1s 1;
+    animation-timeline: view();
+    animation-range:entry 0% cover 30%;
+}
+#img-2{
+    background-color: black;
+    opacity: 0.25;
+    transition: 0.2s;
+    animation: momentts2 1s 1;
+    animation-timeline: view();
+    animation-range:entry 0% cover 30%;
+}
+#img-2:hover{
+    background-color: none;
+    opacity: 1;
+    transform: scale(1.01);
+}
+#img-1:hover{
+    transform: scale(1.01);
+}
+@keyframes momentts{
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes momentts2{
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* about us */
+.about-heading{
+    font-family: "Nosifer", serif;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.about-one, .about-two{
+    padding: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about-one .image-1{
+    width: 650px;
+    height: 300px;
+    animation: about1 1s 1;
+    animation-timeline: view();
+    animation-range:entry 0% cover 35%;
+    border:1px solid grey;
+    padding: 5px;
+}
+.about-two .image-2{
+    width: 650px;
+    height: 300px;
+    animation: about2 1s 1;
+    animation-timeline: view();
+    animation-range:entry 0% cover 35%;
+    border:1px solid grey;
+    margin-left: 50px;
+    padding: 5px;
+
+}
+.about-one .about-item, .about-two .about-item{
+    padding: 25px;
+    font-size: 23px;
+    color:rgb(173, 171, 171);
+    animation: ab 2s 1;
+    font-family: "Emilys Candy", serif;
+    animation-timeline: view();
+    animation-range:entry 0% cover 25%;
+}
+@keyframes about1 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes about2 {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes ab {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }   
+}
+
+/* Reviews */
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.review-card {
+    background: rgb(6, 6, 51);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 250px;
+    transition: transform 0.3s;
+}
+.review-card:hover {
+    transform: translateY(-5px);
+}
+.customer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.customer-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.customer-name {
+    font-weight: bold;
+}
+.stars {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+
+/* Combined */
+.rate-news{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-right: 200px;
+    padding-left: 200px;
+    margin-top: 100px;
+}
+
+/* Rate Us */
+.rating-card {
+    width: 450px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f0c29;
+    background: linear-gradient(to right bottom, #443e89, #0f0c29);
+    padding: 20px 20px;
+    border-radius: 10px;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.058);
+  }
+  .text-wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .text-primary {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .text-secondary {
+    color: #cccccc;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+  .rating-stars-container {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .star-label svg {
+    fill: rgb(210, 210, 210);
+    width: 20px;
+    height: auto;
+  }
+  .rating-stars-container input {
+    appearance: unset;
+  }
+  .rating-stars-container input:hover ~ .star-label svg {
+    fill: rgb(255, 204, 185);
+  }
+  .rating-stars-container input:checked ~ .star-label svg {
+    fill: rgb(255, 102, 47);
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  @keyframes slide-in-fwd-center {
+    0% {
+      transform: scale(1.6);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .socials-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(150, 150, 150);
+  }
+  .social-button {
+    text-decoration: none;
+  }
+  .social-button svg {
+    width: 15px;
+    fill: rgb(228, 228, 228);
+  }
+  .social-button:hover svg {
+    fill: rgb(255, 102, 47);
+  }
+
+/* Newsletter */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background: #606c88;
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
+    background: linear-gradient(to right, #3f4c6b, #606c88);
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px;
+    max-width: 550px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #fff;
+  }
+  
+  .description {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: rgb(209 213 219);
+  }
+  
+  .form div {
+    display: flex;
+    max-width: 28rem;
+    margin-top: 1rem;
+    column-gap: 0.5rem;
+  }
+  
+  .form div input {
+    outline: none;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    color: rgb(255 255 255 );
+    padding: 0.5rem 0.875rem;
+    background-color: rgb(255 255 255 / 0.05);
+    border: 1px solid rgba(253, 253, 253, 0.363);
+    border-radius: 0.375rem;
+    flex: 1 1 auto;
+  }
+  
+  .form div input::placeholder {
+    color: rgb(216, 212, 212);
+  }
+  
+  .form div input:focus {
+    border: 1px solid rgb(99 102 241);
+  }
+  
+  .form div button {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.625rem 0.875rem;
+    background-color: rgb(99 102 241);
+    border-radius: 0.375rem;
+    border: none;
+    outline: none;
+  }
+  
+
+  /* subscribe button */
+
+  /* <button class="Btn">
+</button> */
+.Btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  
+  .Btn::before {
+    position: absolute;
+    content: "SUBSCRIBE";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+  
+  .Btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:active {
+    transform: scale(0.95);
+  }
 
 /* footer */
-.top-footer, .bottom-footer{
-    border-top: 1px solid var(--photo-blue);
-    position: relative;
-}
-.footer-logo{
-    margin-bottom: 30px;
-}
-.footer-info .social-icon{
-    margin-top: 20px;
-}
-.footer-flex-box{
+.footer {
+    margin-top: 100px;
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    color: white;
+    padding: 70px 0px 30px 0px;
     display: flex;
-    margin : 0 -10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-.footer-flex-box>div{
+.footer-container {
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-section {
     flex: 1;
-    padding: 0 10px;
+    padding: 0 15px;
+    text-align: left;
 }
-.footer-flex-box .h3-title{
-    text-transform: capitalize;
-    margin-bottom: 23px;
-}
-.footer-menu ul li a {
-    color:white;
-    transition: 0.3s;
-    text-transform: capitalize;
-}
-
-.footer-menu ul li a:hover, .footer-menu ul li .footer-active-menu{
-    color: var(--photo-blue);
-}
-.footer-menu ul li{
-    margin-bottom: 8px;
-}
-.footer-table-info ul li{
+.footer-section h3 {
+    font-size: 18px;
     margin-bottom: 10px;
-    text-transform: capitalize;
+    color: #6DC7D1;
 }
-.copyright-text{
-    padding: 20px 0;
+.footer-section p, .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+    font-size: 14px;
 }
-
+.footer-section a:hover {
+    color: #6DC7D1;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons a {
+    font-size: 20px;
+    color: #ccc;
+    transition: color 0.3s, transform 0.3s;
+}
+.social-icons a:hover {
+    color: #1db954;
+    transform: scale(1.1);
+}
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+.download-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+.download-buttons img {
+    width: 120px;
+    transition: transform 0.3s;
+}
+.download-buttons img:hover {
+    transform: scale(1.1);
+}
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
 /* Responsive media queries */
 /* for larger tahn 575px screen */
 @media(min-width: 575px){
@@ -908,19 +1681,26 @@ visibility: visible;
     .topbar .container, .topbar-item{
         display: flex;
         align-items: center;
+    font-family: "Emilys Candy", serif;
+
     }
     .topbar .container{
         justify-content: center;
         gap: 30px;
     }
     .topbar-item{
+        font-family: E;
         gap: 6px;
+    font-family: "Emilys Candy", serif;
+
     }
     .topbar-item ion-icon{
         --ionicon-stroke-width:60px;
     }
     .topbar-item .span{
         font-size: var(--fontSize-label-1);
+    font-family: "Emilys Candy", serif;
+
     }
     .topbar .link{
         transition: var(--transition-1);
