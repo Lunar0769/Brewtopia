@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brewtopia</title>
+    <meta name="title" content="Brewtopia - Refreshing Coffee's">
+    <meta name="description" content="Modern and Aesthetic Cafeteria">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="Cafe.css">
+
+    <!-- Ion icon link  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="image" href="daan-evers-tKN1WXrzQ3s-unsplash.jpg">
+    <link rel="preload" as="image" href="nafinia-putra-Kwdp-0pok-I-unsplash.jpg">
+    <link rel="preload" as="image" href="shawn-nmpW_WwwVSc-unsplash.jpg">
+
+</head>
+<body>
+      
+    <!-- Top Corner -->
+    <div class="topbar">
+        <div class="container">
+            <address class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">Restaurant St, Delicious City, London 9578, UK</span>
+            </address>
+            <div class="topbar-item link item-2">
+                <div class="icon">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">Daily : 8.00 am to 10.00 pm</span>
+            </div>
+            <div class="seperator"></div>
+            <a href="tel: +91 6356349549" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">+91 63563 49549</span>
+            </a>
+            <div class="seperator"></div>
+            <a href="mailto: brewtopia@gmail.com" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">brewtopia@gmail.com</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Pre Loader -->
+    <div class="preload loaded" data-preload></div>
+
+    <!-- Navbar -->
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="Screenshot_2025-01-23_233310-removebg-preview.png" width="85px" height="30px" alt="Brewtopia.logo">
+            </a>
+            <nav class="navbar" data-navbar>
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="Screenshot_2025-01-23_233310-removebg-preview.png" width="160px" height="50px" alt="Brewtopia.logo">
+                </a>
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#nav1" class="navbar-link hover-underline active">
+                            <div class="seperator"></div>
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#nav2" class="navbar-link hover-underline">
+                            <div class="seperator"></div>
+                            <span class="span">Menu</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#nav3" class="navbar-link hover-underline">
+                            <div class="seperator"></div>
+                            <span class="span">Offers</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#nav4" class="navbar-link hover-underline">
+                            <div class="seperator"></div>
+                            <span class="span">Explore</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#nav5" class="navbar-link hover-underline">
+                            <div class="seperator"></div>
+                            <span class="span">About</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">Visit Us</p>
+                    <address class="body-4">
+                        Restaurant St, Delicious City, <br>
+                        London 9578, UK
+                    </address>
+                    <p class="body-4 navabr-text">Open: 9.30 am - 2.30pm</p>
+                    <div class="seperator"></div>
+                    <a href="" class=" body-4 sidebar-link">brewtopia@gmail.com</a>
+
+                    <p class="contact-label">Booking Request</p>
+                    <a href="" class="body-1 contact-number hover-underline">+91 63563 49549</a>
+                </div>
+            </nav>
+            <a href="login.html" target="_blank" class="login">
+               Login
+            </a>
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+    </header>
+    <main>
+        <!-- Home -->
+        <article>
+            <section id="nav1" class="hero text-center" aria-label="home" id="home">
+                <ul class="hero-slider" data-hero-slider>
+                    <li class="slider-item active" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="sebastian-schuppik-H7xTpvBjJS4-unsplash.jpg" width="1880" height="950" class="img-cover" alt="">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">Traditional & Hygiene</p>
+                        <h1 class="display-1 hero-title slider-reveal">
+                            For the love of <br> 
+                            delicious Coffee
+                        </h1>
+                        <p class="body-2 hero-text slider-reveal">Come and enjoy our delicious coffee with aesthetic area </p>
+                        <a href="#nav2" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Menu</span>
+                            <span class="text text-2" aria-hidden="true">View Menu</span>
+                        </a>
+                    </li>
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="daan-evers-tKN1WXrzQ3s-unsplash.jpg" width="1880" height="950" class="img-cover" alt="">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">Traditional & Hygiene</p>
+                        <h1 class="display-1 hero-title slider-reveal">
+                            For the love of <br> 
+                            delicious Coffee
+                        </h1>
+                        <p class="body-2 hero-text slider-reveal">Come and enjoy our delicious coffee with aesthetic area </p>
+                        <a href="#nav2" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Menu</span>
+                            <span class="text text-2" aria-hidden="true">View Menu</span>
+                        </a>
+                    </li>
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="nafinia-putra-Kwdp-0pok-I-unsplash.jpg" width="1880" height="950" class="img-cover" alt="">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">Traditional & Hygiene</p>
+                        <h1 class="display-1 hero-title slider-reveal">
+                            For the love of <br>
+                             delicious Coffee
+                        </h1>
+                        <p class="body-2 hero-text slider-reveal">Come and enjoy our delicious coffee with aesthetic area </p>
+                        <a href="#nav2" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Menu</span>
+                            <span class="text text-2" aria-hidden="true">View Menu</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                    <ion-icon name="chevron-back"></ion-icon>
+                </button>
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+                <a href="bookmytable.html" class="hero-btn has-after">
+                    <img src="images/hero-icon.png" width="48" height="48" alt="">
+                    <span class="label-2 text-center span">Book A Table</span>
+                </a>
+            </section>
+        </article>
+        <!-- Menu -->
+        <h1 id="nav2" class="body-1 contact-number hover-underline view-menu-heading">MENU</h1>
+        <div class="menu-main">
+            <div class="menu-3">
+                
+                <a href="coffee.html">
+                    <div class="menu-1-item" style="background-image:url(Coffeemenu2.webp); background-size:cover; opacity:0.6;">
+
+                    </div>
+                </a>
+                <a href="fastfood.html">
+                    <div class="menu-2-item" style="background-image:url(Foodmenu1.webp); background-size:cover; opacity:0.6;">
+
+                    </div>
+                </a>
+            </div>
+            <div class="menu-3">
+                <a href="bakery.html">
+                    <div class="menu-2-item" style="background-image:url(Bakerymenu1.webp); background-size:cover; opacity:0.6;">
+
+                    </div>
+                </a>
+                <a href="cakes.html">
+                    <div class="menu-1-item" style="background-image:url(Cakesmenu1.webp); background-size:cover; opacity:0.6;">
+
+                    </div>
+                </a>
+            </div>
+            <div class="menu-3">
+                <a href="Mocktails.html">
+                    <div class="menu-1-item" style="background-image:url(Mocktails.webp); background-size:cover; opacity:0.7;">
+
+                    </div>
+                </a>
+                <a href="Tea.html">
+                    <div class="menu-2-item" style="background-image:url(Teamenu1.webp); background-size:cover; opacity:0.7;">
+
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    <!-- Best Sellers 2 -->
+    <h1 class="body-1 contact-number hover-underline bestseller-heading">BESTSELLERS</h1>
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="best-container">
+        <ul class="accordion">
+            <li>
+                <img src="Bestseller.webp" alt="" class="img-best" id="img1">
+            </li>
+            <li>
+                <img src="Crunchyredhat.png" alt="" class="img-best" id="img2">
+            </li>
+            <li>
+                <img src="Cafemocha.jpg" alt="" class="img-best" id="img3">
+            </li>
+            <li>
+                <img src="Hazelnutoatcortado.jpg" alt="" class="img-best" id="img5">
+            </li>
+            <li>
+                <img src="Chocolatecortado.jpg" alt="" class="img-best" id="img4">
+            </li>
+        </ul>
+    </div>
+    
+         
+
+        <!-- Offers -->
+        <h1 id="nav3" class="body-1 contact-number hover-underline offers-heading">Offers</h1>
+        <div class="offer">
+            <ul class="accordion">
+                <li>
+                    <img src="offer2.png"/>
+                </li>
+
+                <li>
+                    <img src="b1g1offer.jpg"/>
+                </li>
+
+                <li>
+                    <img src="subscriberoffer.jpg"/>
+                </li>
+
+                <li>
+                    <img src="sandwichoffer.jpg"/>
+                </li>
+                <li>
+                    <img src="valentineoffer.jpg"/>
+                </li>
+            </ul>
+         </div>
+
+        <!-- Our Presence -->
+        <h1 id="nav4" class="body-1 contact-number hover-underline view-menu-heading">OUR PRESENCE</h1>
+        <div class="loc-counter">
+            <div class="location-container">
+                <div class="location-items">
+                    <img src="ahmedabad.avif" alt="">
+                    <p style="left:65px">Gujarat</p>
+                </div>
+                <div class="location-items">
+                    <img src="mumbai.avif" alt="">
+                    <p style="left:40px">Maharashtra</p>
+                </div>
+                <div class="location-items">
+                    <img src="delhi.avif" alt="">
+                    <p style="left:80px">Delhi</p>
+                </div>
+                <div class="location-items">
+                    <img src="rajasthan.avif" alt="">
+                    <p style="left:50px">Rajasthan</p>
+                </div>
+                <div class="location-items">
+                    <img src="kerela.avif" alt="">
+                    <p style="left:70px">Kerala</p>
+                </div>
+                <div class="location-items">
+                    <img src="madhyapradesh.avif" alt="">
+                    <p style="left:25px">Madhya Pradesh</p>
+                </div>
+                <div class="location-items">
+                    <img src="banglore.avif" alt="">
+                    <p style="left:60px">Banglore</p>
+                </div>
+                <div class="location-items">
+                    <img src="goa.avif" alt="">
+                    <p style="left:80px">Goa</p>
+                </div>
+            </div>
+
+             <div class="counter-section">
+                <div class="counter-box">
+                    <span class="counter" data-target="2200000">0</span>
+                    <strong>Customers</strong>
+                </div>
+                <div class="counter-box">
+                    <span class="counter" data-target="870000">0</span>
+                    <strong>Reviews</strong>
+                </div>
+                <div class="counter-box">
+                    <span class="counter" data-target="700">0</span>
+                    <strong>Outlets</strong>
+                </div>
+                <div class="counter-box">
+                    <span class="counter" data-target="227">0</span>
+                    <strong>Items</strong>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Moments -->
+        <h1 class="moments-heading">Moments @ BREWTOPIA</h1>
+         <div class="moments">
+            <div class="moments-items">
+                <img id="img-1" src="about1.png" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-2" src="about2.png" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-1" src="about3.png" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-2" src="about4.webp" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-1" src="about16.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-2" src="about6.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-2" src="about7.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-1" src="about8.png" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-2" src="about9.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-1" src="about10.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-2" src="about11.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-1" src="about12.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-1" src="about13.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-2" src="about14.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-1" src="about15.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-2" src="about16.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-1" src="about17.avif" alt="">
+            </div>
+            <div class="moments-items">
+                <img id="img-2" src="about18.avif" alt="">
+            </div>
+         </div>
+         <hr>
+
+        <!-- Newly Launched -->
+
+        <!-- About -->
+        <h1 id="nav5" class="body-1 contact-number hover-underline about-heading">ABOUT</h1>
+        <div class="about-one">
+            <div class="about-image">
+                <img class="image-1" src="kris-atomic-3b2tADGAWnU-unsplash.jpg" alt="">
+            </div>
+            <div class="about-item">
+                <p>
+                    Brewtopia is the country's first completely indigenous and eclectic café chain, known not just for its menu, but the varied experiences it brought to 20 outlets in 18 cities to expand the cafe culture.
+                </p>
+                <p>
+                    Born in 2001 in the bylanes of Churchgate, Mumbai and celebrating more than 20 years of operations, Brewtopia has influenced the world-view of an entire generation, to stir a social revolution.
+                </p>
+            </div>
+        </div>
+        <div class="about-two">
+            <div class="about-item">
+                <p>
+                    Brewtopia is the country's first completely indigenous and eclectic café chain, known not just for its menu, but the varied experiences it brought to 20 outlets in 18 cities to expand the cafe culture.
+                </p>
+                <p>
+                    Born in 2001 in the bylanes of Churchgate, Mumbai and celebrating more than 20 years of operations, Brewtopia has influenced the world-view of an entire generation, to stir a social revolution.
+                </p>
+            </div>
+            <div class="about-image">
+                <img class="image-2" src="rodeo-project-management-software-PYqzYhTNjho-unsplash.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Reviews -->
+        <h1 class="body-1 contact-number hover-underline review-heading">Reviews</h1>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="customer-info">
+                    <img src="artist-01.png" alt="Customer 1" class="customer-photo">
+                    <span class="customer-name">Divya Bhalodia</span>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p>Great experience! Highly recommended.</p>
+            </div>
+            
+            <div class="review-card">
+                <div class="customer-info">
+                    <img src="artist-02.png" alt="Customer 2" class="customer-photo">
+                    <span class="customer-name">Kavya Patel</span>
+                </div>
+                <div class="stars">★★★★☆</div>
+                <p>Good service, but can be improved.</p>
+            </div>
+            
+            <div class="review-card">
+                <div class="customer-info">
+                    <img src="artist-03.png" alt="Customer 3" class="customer-photo">
+                    <span class="customer-name">Smit Panchal</span>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p>Excellent quality and support!</p>
+            </div>
+            <div class="review-card">
+                <div class="customer-info">
+                    <img src="artist-05.png" alt="Customer 3" class="customer-photo">
+                    <span class="customer-name">Arya Shah</span>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p>Excellent quality and support!</p>
+            </div>
+            <div class="review-card">
+                <div class="customer-info">
+                    <img src="artist-04.png" alt="Customer 4" class="customer-photo">
+                    <span class="customer-name">Smit Parmar</span>
+                </div>
+                <div class="stars">★★★★☆</div>
+                <p>Very satisfied with my purchase.</p>
+            </div>
+        </div>
+        <br>
+
+
+        <div id="custom_review" class="reviews-container">
+        </div>
+
+        <!-- Combined -->
+         <div class="rate-news">
+            <div class="rate-news-item">
+                            
+        <!-- Rate Us -->
+            <div class="rating-card">
+                <div class="text-wrapper">
+                <p class="text-primary">Please Rate Your Experience</p>
+                <p class="text-secondary">to help us serve you better</p>
+            </div>
+  
+            <div>
+            <button class="custom-review" onclick="addReview()">
+            Write Review
+            </button>
+        </div>
+    <br>
+    <div class="socials-container">
+      <a class="social-button" href="#">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+          ></path>
+        </svg>
+      </a>
+      <a class="social-button" href="#">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+          ></path>
+        </svg>
+      </a>
+      <a class="social-button" href="#">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+          ></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+            </div>
+  
+  <!-- Newsletter -->
+   <div class="rate-news-item">
+    <form class="form">
+        <span class="title">Subscribe to our newsletter.</span>
+        <p class="description">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.</p>
+        <div>
+          <input placeholder="Enter your email" type="email" name="email" id="email-address">
+          <button type="submit">Subscribe</button>
+        </div>
+      </form>
+   </div>
+    </div>
+
+        
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Experience the best coffee, snacks, and customer service at our cozy cafeteria.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#nav1">Home</a>
+                    <a href="#nav2">Menu</a>
+                    <a href="#nav3">Offers</a>
+                    <a href="#nav4">Explore</a>
+                    <a href="#nav5">About</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: brewtopia@gmail.com</p>
+                    <p>Phone: +91 6356349549</p>
+                    <p>Location: 123 Coffee Street, City</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 8 AM - 10 PM</p>
+                    <p>Saturday - Sunday: 9 AM - 11 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
+                    </div>
+                    <div class="download-buttons">
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+                        <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Brewtopia &copy; 2025 Cafeteria. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="Cafe.js"></script>
+</body>
+</html>
